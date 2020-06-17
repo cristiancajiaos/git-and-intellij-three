@@ -1,10 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">
+    <a href="#" [routerLink]="['one']" class="navbar-brand">
         Git and IntelliJ 3
     </a>
 </nav>
 <div class="container mt-2">
     <p>This project has no other purpose than exercising using Git and IntelliJ together.</p>
+
+    <ul>
+        <li>
+            <a href="#" [routerLink]="['/one']">
+                One
+            </a>
+        </li>
+        <li>
+            <a href="#" [routerLink]="['/two']">
+                Two
+            </a>
+        </li>
+        <li>
+            <a href="#" [routerLink]="['/three']">
+                Three
+            </a>
+        </li>
+    </ul>
+
+    <hr/>
 
     <router-outlet></router-outlet>
 </div>
